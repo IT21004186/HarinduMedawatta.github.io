@@ -1,0 +1,2 @@
+# HarinduMedawatta.github.io
+ A personal portfolio website showcasing my skills, projects, and experiences in the field of web development. Developed using HTML, CSS, and JavaScript, this website serves as a platform to highlight my work and provide an overview of my capabilities. It features a modern and responsive design, demonstrating my proficiency in front-end development. The website is hosted on GitHub, allowing easy access and sharing of my portfolio with potential clients, employers, and collaborators.
