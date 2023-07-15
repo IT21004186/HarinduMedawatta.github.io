@@ -290,11 +290,33 @@ nav ul li a:hover::after{
     margin-right: 15px;
     color: #fff;
     display: inline-block;
-    transition: transform 0.5s;
+    transition: ease-in-out 0.5s;
 }
-.social-icons a:hover{
-    color: #ff004f;
+/* ---------Twitter-logo--------- */
+.social-icons a i.fa-brands.fa-square-twitter:hover{
+    color: #00ACEE;
     transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
+}
+.social-icons a i.fa-brands.fa-square-instagram:hover{
+    color: #E4405F;
+    transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
+}
+.social-icons a i.fa-brands.fa-square-github:hover{
+    color: #181717;
+    transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
+}
+.social-icons a i.fa-brands.fa-linkedin:hover{
+    color: #0A66C2;
+    transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
+}
+.social-icons a i.fa-brands.fa-square-behance:hover{
+    color: #053eff;
+    transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
 }
 .btn.btn2{
     display: inline-block;
