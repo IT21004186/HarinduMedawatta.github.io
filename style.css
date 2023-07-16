@@ -23,12 +23,12 @@ body{
 /* ----------------------------profile image section----------------------------------- */
 
 .home_blob{
-    width: 300px;
+    width: 400px;
 }
 .home_blob-img{
     width: 200px;
 }
-
+/* ---------------------------end-------------------------------------------------------- */
 .container{
     padding: 10px 10%;
 }
@@ -69,6 +69,26 @@ nav ul li a::after{
 
 nav ul li a:hover::after{
     width: 100%;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+    align-items: flex-start;
+}
+.header-col-1{
+    flex-basis: 50%;
+    margin-left: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-col-2{
+    flex-basis: 50%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-text{
@@ -194,6 +214,7 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 /* -----------------------------------------------portfolio section---------------------------------- */
