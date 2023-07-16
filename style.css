@@ -9,16 +9,24 @@ html{
 }
 
 body{
-    background: #080808;
+    background: #1C1D1F;
     color: #fff;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("images/background.png");
+    background-image: url("images/background4.png");
     background-size: cover;
     background-position: center;
+}
+/* ----------------------------profile image section----------------------------------- */
+
+.home_blob{
+    width: 300px;
+}
+.home_blob-img{
+    width: 200px;
 }
 
 .container{
@@ -304,7 +312,7 @@ nav ul li a:hover::after{
     transition: ease-in-out 0.5s;
 }
 .social-icons a i.fa-brands.fa-square-github:hover{
-    color: #181717;
+    color: #9BA4B5;
     transform: translateY(-5px);
     transition: ease-in-out 0.5s;
 }
