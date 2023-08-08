@@ -346,9 +346,18 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
     transition: ease-in-out 0.5s;
 }
-.btn.btn2{
+.submit-btn{
     display: inline-block;
     background: #ff3131;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff3131;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
 }
 .contact-right form{
     width: 100%;
@@ -364,7 +373,7 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .btn2{
+form .submit-btn{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;

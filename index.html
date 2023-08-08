@@ -201,11 +201,12 @@
                 <a href="documents/Harindu-Medawatta_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form id="contact-form" name="submit-to-google-sheet">
+                    <input type="text" id="user_name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="user_email" name="Email" placeholder="Email Address" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea name="Message" id="message" rows="6" placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -219,52 +220,5 @@
     <!-- -------------------------------------JavaSript Code Snippet--------------------- -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="main.js"></script>
-    <!-- <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-           for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-           }
-           for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-           }
-           event.currentTarget.classList.add("active-link");
-           document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script> -->
-    <!-- <script>
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script> -->
-
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycby5LY17M3tb5_sQgHAFUIkUBaD66WF3XfZAcNho5t4I-GK5v7Y726NwKPmBliRWyHFpmw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-    
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },1500)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script> -->
-
 </body>
 </html>
