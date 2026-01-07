@@ -3,34 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harindu Medawatta</title>
+    <meta name="description" content="Harindu Medawatta - Full-stack Web Developer specializing in building scalable web experiences. Expertise in React.js, JavaScript, Node.js, and modern web technologies.">
+    <meta name="keywords" content="web developer, full-stack developer, React.js, JavaScript, portfolio, UI/UX design, mobile app development">
+    <meta name="author" content="Harindu Medawatta">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Harindu Medawatta - Full-stack Web Developer">
+    <meta property="og:description" content="Building scalable web experiences with modern technologies">
+    <meta property="og:image" content="images/Hero-image.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Harindu Medawatta - Full-stack Web Developer">
+    <meta property="twitter:description" content="Building scalable web experiences with modern technologies">
+    
+    <title>Harindu Medawatta | Full-stack Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb84151278.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
+    <!-- Navigation -->
+    <header id="header">
+        <nav>
+            <img src="assets/logo.svg" class="logo" alt="Harindu Medawatta Logo">
+            <ul id="sidemenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()" aria-label="Close menu"></i>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <i class="fa-solid fa-bars" onclick="openmenu()" aria-label="Open menu"></i>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-gradient-orb"></div>
+            <div class="hero-gradient-orb"></div>
+        </div>
         <div class="container">
-            <nav>
-                <img src="assets/logo.svg" class="logo" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="container">
-                <div class="row1">
-                    <div class="header-col-1">
-                        <div class="header-text">
-                            <p>Hello!</p>
-                            <h1>I'm <span>Harindu</span><br>Medawatta</h1>
-                        </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello!</p>
+                    <h1 class="hero-name">
+                        I'm <span class="gradient-text">Harindu</span><br>
+                        Medawatta
+                    </h1>
+                    <p class="hero-tagline">Building scalable web experiences</p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
-                    <div class="header-col-2">
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
                         <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -43,181 +81,384 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home_blob-img" x="" y="-6" href="images/pro-img3.jpeg"/>
+                                <image class="home_blob-img" x="0" y="-6" href="images/Hero-image.png" alt="Harindu Medawatta"/>
                             </g>
                         </svg>
                     </div>
                 </div>
             </div>
         </div>
-<!-- ---------------------------------------------------------About Section------------------------------------------------------------------------- -->
-    </div>
-    <div id="about">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/img22.jpeg" alt="user image">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/main-image-2.png" alt="Harindu Medawatta" loading="lazy">
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm Harindu Medawatta, a dedicated individual who embraces traditional methods while constantly seeking new knowledge to enhance myself.
-                        With a strong work ethic, I actively gain experience and thrive as a team player in competent environments. 
-                        I hold a background in Bio Science from Ananda College, where I served as the Former Editor at the Anandian Astronomical Association. 
-                        I am currently pursuing a BSc(Hons) in Information Technology at SLIIT, equipping me with skills in Sonarqube, Selenium Testing, 
-                        Project Management, Team Leadership, and more. My diverse skill set, combined with a passion for personal growth, 
-                        makes me a valuable asset in any professional setting.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Tools & Technologies</span><br>React.js • Java • JavaScript • MySQL • HTML5 • CSS3 • Figma(Software)</li>
-                            <li><span>Industry Knowledge</span><br>Project Management, Time Management, Project Planning, UX/UI Design</li>
-                            <li><span>Interpersonal Skills</span><br>Team Leadership, Active Listening, Collaboration</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>ITPM Project - Spicelab</span><br>
-                                Tools & Technology : MERN Stack<br>
-                                Development IDE : Visual Studio Code<br>
-                                Testing Methods : SonarQube, Selenium</li>
-                            <li><span>ITP Project - Supermarket Management System</span><br>
-                                Tools and Technologies- MERN Stack<br>
-                                Development IDE- Visual Studio Code<br>
-                                Testing Methods- Integration Testing, System Testing </li>
-                            <li><span>MAD Project - "Olympia" Mobile Application</span><br>
-                                Tools and technologies- Java, Firebase Database<Br>
-                                Development IDE - Android Studio</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>SLIIT, Malabe.</span><br>BSc(Hons) in Information Technology, Information Technology<br>2021-2024</li>
-                            <li><span>Ananda College, Colombo 10.</span><br>General Certificate of Education (Advanced Level)<br>2018-2019</li>
-                            <li><span>Ananda College, Colombo 10.</span><br>General Certificate of Education (Ordinary Level)<br>2015</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- --------------------------------------------------------------------Services---------------------------------------------------------- -->
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>Web development refers to the process of creating websites and web applications. 
-                    It involves writing code using programming languages like HTML, CSS, and JavaScript 
-                    to build the structure, design, and functionality of a website. 
-                    Web developers work on both the client-side and server-side to ensure seamless user experiences and efficient data processing. 
-                    They utilize frameworks, libraries, and tools to streamline development and deliver interactive and dynamic websites to users.</p>
-                <a href="https://developer.mozilla.org/en-US/" target="_blank">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>UI/UX design focuses on creating intuitive, visually appealing interfaces and enhancing user experiences. 
-                    It involves understanding user needs, wireframing, prototyping, and applying design principles. 
-                    UI/UX designers collaborate with developers and stakeholders to craft engaging digital experiences 
-                    that delight users and achieve business goals.</p>
-                <a href="https://www.interaction-design.org/" target="_blank">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>Mobile App Development</h2>
-                <p>Mobile app development creating apps for mobile devices, leveraging languages like Swift,<br>
-                    Objective-C, Java, or Kotlin, and emphasizing UX/UI design. It presents opportunities for 
-                    businesses to engage users and drive innovation in the digital landscape.</p>
-                <a href="https://developer.android.com/guide" target="_blank">Learn more</a>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ---------------------------------------------------Portfolio Section------------------------------------------------------------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="image1">
-                <div class="layer">
-                    <h3>Supermarket Management System</h3>
-                    <p>This System will cover all aspects of supermarket management.
-                        This system will eliminate all the current flows and increase 
-                        the productivity of the system by introducing more functions under single system.
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm Harindu Medawatta, a dedicated full-stack developer who embraces traditional methods while constantly seeking new knowledge to enhance my craft. With a strong work ethic, I actively gain experience and thrive as a team player in competent environments.
                     </p>
-                    <a href="https://github.com/SLIITITP/y2_s2_wd_it_02-itp2022_s2_b02_g17.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="image2">
-                <div class="layer">
-                    <h3>Spicelab Web Application</h3>
-                    <p>Analyzing the potential impact of promoting Sri Lanka's spice exports on the country's economy,
-                        including the potential for increasing exports, attracting foreign attention, 
-                        and generating employment opportunities.The app keep records of the monthly
-                        spice market income and expenditure values.
+                    <p>
+                        I hold a background in Bio Science from Ananda College, where I served as the Former Editor at the Anandian Astronomical Association. I am currently pursuing a BSc(Hons) in Information Technology at SLIIT, equipping me with skills in modern web technologies, testing frameworks, project management, and team leadership.
                     </p>
-                    <a href="https://github.com/TharushaRuwantha/SpiceLab.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="image3">
-                <div class="layer">
-                    <h3>Olympians Sportwear app</h3>
-                    <p>This app is works as a normal E-commers app. customers can purchase items.</p>
-                    <a href="https://github.com/harindun99/Olympians.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>
+                        My diverse skill set, combined with a passion for personal growth and creating impactful digital experiences, makes me a valuable asset in any professional setting.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedicated</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/IT21004186?tab=repositories" target="_blank" class="btn">See more</a>
-    </div>
-</div>
+    </section>
 
-<!-- ---------------------------------------------------Contact Details Section------------------------------------------------------ -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> harindumedawatta@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> +94 76 1048832</p>
-                <div class="social-icons">
-                    <a href="https://twitter.com/harindu_" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href="https://instagram.com/harindu._?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://github.com/IT21004186" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/harindu-medawatta" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.behance.net/harindu99" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
-                </div>
-                <a href="documents/Harindu-Medawatta_CV.pdf" download class="btn btn2">Download CV</a>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and tools I work with to bring ideas to life</p>
             </div>
-            <div class="contact-right">
-                <form id="contact-form" name="submit-to-google-sheet">
-                    <input type="text" id="user_name" name="Name" placeholder="Your Name" required>
-                    <input type="email" id="user_email" name="Email" placeholder="Email Address" required>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    <textarea name="Message" id="message" rows="6" placeholder="Your Message..." required></textarea>
-                    <button type="submit" class="submit-btn">Send</button>
-                </form>
-                <span id="msg"></span>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-tools"></i>
+                        <h3>Tools & Others</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Android Studio</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">UX/UI Design</span>
+                        <span class="skill-tag">Collaboration</span>
+                        <span class="skill-tag">Time Management</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright &copy; Harindu. Made with <i class="fa-solid fa-feather"></i> by skillshare</p>
-    </div>
-</div>
+    </section>
 
-    <!-- -------------------------------------JavaSript Code Snippet--------------------- -->
+    <!-- Experience/Timeline Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience & Education</h2>
+                <p>My journey in technology and education</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2024</div>
+                        <h3>BSc(Hons) in Information Technology</h3>
+                        <p>SLIIT, Malabe - Currently pursuing advanced studies in Information Technology with focus on web development, software engineering, and project management.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Testing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2023</div>
+                        <h3>ITPM Project - Spicelab</h3>
+                        <p>Full-stack web application for analyzing and promoting Sri Lanka's spice exports. Features monthly market income and expenditure tracking with comprehensive data visualization.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Visual Studio Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2022</div>
+                        <h3>ITP Project - Supermarket Management System</h3>
+                        <p>Comprehensive management system covering all aspects of supermarket operations, designed to eliminate current flows and increase productivity through centralized functions.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">Integration Testing</span>
+                            <span class="tech-tag">System Testing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2022</div>
+                        <h3>MAD Project - "Olympia" Mobile Application</h3>
+                        <p>E-commerce mobile application for sportswear, enabling customers to browse and purchase items with a seamless user experience.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2018-2019</div>
+                        <h3>General Certificate of Education (Advanced Level)</h3>
+                        <p>Ananda College, Colombo 10 - Former Editor at the Anandian Astronomical Association, demonstrating leadership and organizational skills alongside academic excellence.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Bio Science</span>
+                            <span class="tech-tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>Showcasing my work in web and mobile development</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-1.png" alt="Supermarket Management System" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SLIITITP/y2_s2_wd_it_02-itp2022_s2_b02_g17.git" target="_blank" class="project-link" aria-label="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Supermarket Management System</h3>
+                        <p>Comprehensive management system covering all aspects of supermarket operations. Designed to eliminate current flows and increase productivity through centralized functions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">React.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-2.png" alt="Spicelab Web Application" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/TharushaRuwantha/SpiceLab.git" target="_blank" class="project-link" aria-label="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spicelab Web Application</h3>
+                        <p>Analyzing the potential impact of promoting Sri Lanka's spice exports. Features monthly spice market income and expenditure tracking with data visualization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">Selenium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-3.png" alt="Olympians Sportswear App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/harindun99/Olympians.git" target="_blank" class="project-link" aria-label="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Olympians Sportswear App</h3>
+                        <p>E-commerce mobile application for sportswear, enabling customers to browse and purchase items with an intuitive user interface and seamless shopping experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-btn">
+                <a href="https://github.com/IT21004186?tab=repositories" target="_blank" class="btn btn-secondary">See More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p>What I can help you build</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Creating modern, responsive websites and web applications using cutting-edge technologies. From front-end interfaces to back-end systems, I build scalable solutions that deliver exceptional user experiences.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-crop"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Designing intuitive, visually appealing interfaces that enhance user experiences. I combine design principles with user research to create engaging digital experiences that achieve business goals.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-brands fa-app-store"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>
+                        Building native and cross-platform mobile applications that engage users and drive innovation. Leveraging modern frameworks and best practices to deliver high-quality mobile experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Me</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>harindumedawatta@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+94 76 1048832</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://twitter.com/harindu_" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/harindu._?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/IT21004186" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harindu-medawatta" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.behance.net/harindu99" target="_blank" class="social-link" aria-label="Behance">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </div>
+                    <a href="documents/Harindu-Medawatta_CV.pdf" download class="btn btn-secondary" style="margin-top: var(--spacing-lg);">
+                        <i class="fa-solid fa-download" style="margin-right: var(--spacing-sm);"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <label for="user_name">Your Name</label>
+                            <input type="text" id="user_name" name="Name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Email Address</label>
+                            <input type="email" id="user_email" name="Email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span id="submitText">Send Message</span>
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; <span id="currentYear"></span> Harindu Medawatta. Made with <i class="fa-solid fa-feather"></i> by skillshare</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
