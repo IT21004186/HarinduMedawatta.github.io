@@ -625,6 +625,18 @@ nav .fa-xmark {
   font-weight: 500;
   border: 1px solid var(--border-color);
   transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.skill-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .skill-tag:hover {
@@ -632,6 +644,10 @@ nav .fa-xmark {
   color: white;
   transform: scale(1.05);
   border-color: var(--accent-primary);
+}
+
+.skill-tag:hover .skill-icon {
+  filter: brightness(0) invert(1);
 }
 
 /* ============================================
